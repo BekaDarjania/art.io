@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 1000px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    
+    min-height: 70px;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    box-shadow: 0 0 20px black;
+}
+header h1{
+    margin-left: 20px;
+}
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+header nav button{
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+    
+    transition: all linear 100ms;
+}
+header nav button:hover{
+    color: rgba(255, 255, 255, 1);
+    font-size: 23px;
+}
+
+p {
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+h1{
+    color: rgb(255, 255, 255);
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+}
+
+#banner{
+    z-index: -2;
+    height: 600px;
+    margin: 0;
+    background-image: url('https://cdn.stocksnap.io/img-thumbs/960w/ZAJ8B3VGGD.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+        /* Add the opacity */
+    -webkit-filter: opacity(.9);
+    
+}
+#banner p{
+    color: white;
+    margin: auto;
+    font-family: 'Amatic SC', cursive;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 300px;
+}
+
+#new-art{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 400px;
+    background-color: #fff;
+    border-top: dashed 2px #333;
+    border-bottom: dashed 2px #333;
+}
+#new-art h2{
+    margin: auto;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 42px;
+    color: #333;
+}
+#new-art #new-art-drowdown{
+    min-height: 300px;
+    margin: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+#new-art #new-art-drowdown .art-card{
+    margin: 10px 5px 10px 5px;
+    display: inline-block;
+    height: 280px;
+    width: 340px;
+    
+    background-color: fuchsia;
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    
+    /* Add the opacity */
+    -webkit-filter: opacity(.6);
+    transition: all linear 100ms;
+    
+}
+#new-art #new-art-drowdown .art-card:hover{
+    -webkit-filter: opacity(1);
+    background-size: 600px;
+}
+
+#join{
+    z-index: 0;
+    padding: 20px;
+    font-family: 'Amatic SC', 'cursive';
+    
+    min-height: 400px;
+    background-color: #ddd;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('http://www.creativevisionsrising.com/wp-content/uploads/2015/12/pricing-your-art.jpg');
+    background-size: cover;
+    /* Add the opacity */
+    -webkit-filter: opacity(.7);
+}
+#join form{
+    /* Add the opacity */
+    z-index: 2;
+    -webkit-filter: opacity(1);
+    z-index: 1;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 100px;
+    
+    display: grid;
+    grid-template-rows: auto;
+    max-width: 350px;
+}
+#join form p{
+    text-align: left;
+    margin: 0;
+    color: black;
+    font-family: 'Amatic SC', 'cursive';
+    font-size: 32px;
+}
+#join form input{
+    text-align: left;
+    font-family: 'Amatic SC', 'cursive';
+    padding: 10px;
+    margin: 10px 0 0 0;
+    min-width: 250px;
+    max-width: 350px;
+    border: dashed 2px #333;
+    border-radius: 10px;
+    font-size: 22px;
+}
+#join form button{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: 'Amatic SC', 'cursive';
+    padding: 10px;
+    margin: 10px 0 0 0;
+    min-width: 250px;
+    max-width: 350px;
+    border: dashed 2px #333;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+footer{
+    background-color: #111;
+    min-height: 200px;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.52);
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+    padding-top: 100px;
+}
