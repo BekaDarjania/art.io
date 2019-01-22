@@ -3,25 +3,42 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>art.io</title>
+    
+	<title>ArtsMidwest.com</title>
+    
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
+    
+        <script>
+    
+        function toggleSlideBar () 
+        { 
+            document.getElementById("nav").classList.toggle('active');
+        }
+        
+        function Open (url){
+            window.location = url;
+        }
+        
+    </script>
+    
 </head>
 <body>
 	
     <header>
-        <h1>Art.io</h1>
+        <img src="src/logo_t.png" style="height: 40px; margin: auto; margin-left: 20px;" onclick="Open('index.html')">
         <div></div>
         <nav>
-            <button onclick="">HOME</button>
-            <button onclick="">GALLERY</button>
+            <button class="" onclick="Open('index.html')">HOME</button>
+            <button onclick="Open('gallery.html')">GALLERY</button>
             <button onclick="">STORE</button>
             <button onclick="">LOGIN</button>
         </nav>
+        <button id="phoneButton" onclick="toggleSlideBar"> | | | </button>
     </header>
-    
+        
     <div id="banner">
         <p>Used by 1'000'000+ artists and 10'000'000+ customers worldwide!</p>
     </div>

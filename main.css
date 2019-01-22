@@ -1,18 +1,17 @@
 body{
     margin: 0;
     padding: 0;
-    min-height: 1000px;
+    background-color: #f0f0f0;
 }
 
 header{
-    background-color: black;
+    background-color: #0a2e48;
     color: white;
     
     min-height: 70px;
     
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    box-shadow: 0 0 20px black;
+    grid-template-columns: 1fr 2fr 1fr 0fr;
 }
 header h1{
     margin-left: 20px;
@@ -32,8 +31,11 @@ header nav button{
 }
 header nav button:hover{
     color: rgba(255, 255, 255, 1);
-    font-size: 23px;
 }
+header #phoneButton{
+    visibility: hidden;
+}
+
 
 p {
     margin: auto;
@@ -181,3 +183,130 @@ footer p{
     font-size: 22px;
     padding-top: 100px;
 }
+
+
+#Home{
+    height: 0;
+}
+#Home:hover{
+    height: 150px;
+}
+
+
+#gallery-container{
+    min-height: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+#gallery-container .gallery-img{
+    height: 250px;
+    width: 300px;
+    margin: 2px;
+    background-color: #ddd;
+    display: inline-block;
+    
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    
+        /* Add the opacity */
+    -webkit-filter: opacity(.9);
+    transition: all linear 100ms;
+}
+#gallery-container .gallery-img:hover{
+    -webkit-filter: opacity(1);
+    background-size: 520px;
+}
+
+
+#product-container{
+    min-height: 600px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #f0f0f0;
+}
+#product-container .left .product-manipulation-panel{
+    background-color: white;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
+}
+#product-container .left .product-manipulation-panel .buy{
+    
+}
+#product-container .left .product-manipulation-panel button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    margin: 2px;
+    background-color: #0f5e96;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 32px;
+}
+#product-container .left .product-manipulation-panel h2{
+        font-family: 'Amatic SC', cursive;
+}
+#product-container .right{
+
+}
+#product-container .right p{
+    white-space: pre-line;
+    margin: 20px;
+    margin-top: 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
+}
+#product-container .product-pic{
+    width: 100%;
+    background-color: #ddd;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
+}
+
+@media only screen and (max-width: 1000px)
+{ 
+    #product-container{
+        padding: 20px;
+        display: block;
+        grid-template-rows: auto;
+    }
+    #product-container .right p{
+        white-space: pre-line;
+        margin: 0px;
+        margin-top: 0;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
+    }
+    
+    header{
+        grid-template-columns: 1fr 2fr 0fr 1fr;
+    }
+    header nav{
+        visibility: collapse;
+    }
+    
+    header #phoneButton{
+        visibility: visible;
+        background-color: inherit;
+        color: rgba(255, 255, 255, 0.6);
+        border: none;
+        font-family: 'Amatic SC', cursive;
+        font-size: 22px;
+
+        transition: all linear 100ms;
+        margin: auto;
+        margin-right: 20px;
+        width: 30px;
+    }
+    
+    header #phoneButton:hover{
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+
